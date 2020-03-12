@@ -1,0 +1,101 @@
+<html>
+	<head>
+    	<title></title>      	
+        {% if theme==True %}
+        	<link rel="stylesheet" href="static/css/wolf-theme.css" />
+        {% else %}
+        	<link rel="stylesheet" href="static/css/bootstrap.min.css" />
+        {% endif %}  
+        <link rel="stylesheet" href="static/css/all.min.css" />
+        <link rel="stylesheet" href="static/css/animate.min.css" />
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <meta name="generator" content="Wolf Landing Page"/>
+        <meta name="description" content="Los meta tags de HTML codifican información para ser interpretada por el navegador y los buscadores. ¿Sabes cuáles son imprescindibles?"/>
+        <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3"/>
+        <meta name="author" content="Nombre del autor" />
+        <meta name="copyright" content="Propietario del copyright" />
+        <meta name="robots" content="index"/>
+        <!--  Essential META Tags -->
+		<meta property="og:title" content="{{title}}" />
+		<meta property="og:description" content="Offering tour packages for individuals or groups." />
+		<meta property="og:image" content="https://www.conco.com.mx/static/img/conco.jpg" />
+		<meta property="og:image:width" content="900" />
+		<meta property="og:image:height" content="675" />
+		<meta property="og:url" content="https://www.conco.com.mx"/>
+		<meta property=”og:type” content=”website” />
+		<meta property="og:locale:alternate" content="es_MX" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<!--  Non-Essential, But Recommended -->
+		<meta property="og:site_name" content="European Travel, Inc." />
+		<meta name="twitter:image:alt" content="Alt text for image" />	
+		<!--  Non-Essential, But Required for Analytics -->	
+		<meta name="twitter:site" content="@website-username" />
+		 <script src="https://kit.fontawesome.com/b45a06c51a.js" crossorigin="anonymous"></script>
+		
+         {% if ga.startswith('UA-') %}
+         	<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2396491-23"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+			
+			  gtag({{"'config', '"|safe + ga + "'"|safe}});
+			</script>
+         {% endif %}  
+    </head>
+    <body style="background-image: url('static/img/background.jpg'); background-repeat: no-repeat; background-size: cover;">
+	<section id="businesscard">
+		<div class="container mt-4 text-dark">
+		<div class="row">
+      <div class="col-12 col-sm-6 text-center bg-light p-4" data-animation="slideInLeft">
+         <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/static/img/avatar.jpg" alt="Italian Trulli">
+        <h2>Antonio Fregoso</h2>
+        <h5>Transformacion Digital<br />
+        con sentido humano</h5>
+        
+        <p ><ul class="list-unstyled">
+        	<li>Consultoría en transformación digital</li>
+        	<li>Implementación de Odoo</li>
+        	<li>Desarrollo de módulos odoo</li>
+        	<li>Marketing Digital</li>
+        	<li>Software Opensource</li>
+        </ul></p>
+      
+      </div><!-- /.col-lg-4 -->
+      <div class="col-12 col-sm-6 bg-light p-4" data-animation="slideInRight">
+         <h2>Contacto</h2>
+        <ul class="list-group list-group-flush">
+		  <li class="list-group-item bg-transparent"><a class="text-dark list-group-item-action" href="static/vcf/AntonioFregoso.vcf"><i class="fas fa-2x fa-address-card"></i><span class="ml-5">vCard</span></a></li>
+		  <li class="list-group-item bg-transparent"><a  class="text-dark list-group-item-action"href=" https://wa.me/5215611418138"><i class="fab fa-2x fa-whatsapp"></i><span class="ml-5">WhatsApp</span></a></li>
+		  <li class="list-group-item bg-transparent"><a  class="text-dark list-group-item-action"href="url"><i class="fab fa-2x fa-facebook-messenger"></i><span class="ml-5">Messenger</span></a></li>
+		  <li class="list-group-item bg-transparent"><a  class="text-dark list-group-item-action"href="tel:5611418138"><i class="fas fa-2x fa-mobile-alt"></i><span class="ml-5">5611418138</span></a></li>
+		  <li class="list-group-item bg-transparent"><a  class="text-dark list-group-item-action"href="mailto:yomero@antoniofregoso.com"><i class="fas fa-2x fa-envelope"></i><span class="ml-5">yomero@antoniofregoso.com</span></a></li>
+		  <li class="list-group-item bg-transparent"><a  class="text-dark list-group-item-action"href="https://antoniofregoso.com"><i class="fas fa-2x fa-globe"></i><span class="ml-5">antoniofregoso.com</span></a></li>
+		  </ul>
+       
+      </div><!-- /.col-lg-4 -->
+		</div>
+		<div class="row mt-4">
+			<div class="col-12 text-center ">
+				 <p  data-animation="flipInX">
+				  <a class="btn btn-sm btn-link text-light" href="https://www.linkedin.com/in/antoniofregoso/"><i class="fab fa-3x fa-linkedin"></i></a>
+				  <a class="btn btn-sm btn-link text-light" href="https://twitter.com/antoniofregoso"><i class="fab fa-3x fa-twitter-square"></i></a>
+				  <a class="btn btn-sm btn-link text-light " href="url"><i class="fab fa-3x fa-facebook-square"></i></a>
+				  <a class="btn btn-sm btn-link text-light" href="url"><i class="fab fa-3x fa-youtube-square"></i></a>
+				  <a class="btn btn-sm btn-link text-light" href="https://github.com/antoniofregoso"><i class="fab fa-3x fa-github-square"></i></a>
+		
+				</p>
+			</div>
+		</div>
+		</div>
+	</section>    	
+
+        <script src="static/js/jquery-3.4.1.min.js"></script>
+        <script src="static/js/popper.min.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+         <script src="static/js/wolf.js"></script>
+    </body>
+</html>
