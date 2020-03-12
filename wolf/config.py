@@ -5,7 +5,7 @@ import xmlrpc.client
 
 class Config(object):
     config = configparser.ConfigParser() 
-    config.read('wolf.ini')
+    config.read('app.ini')
     csrf = config['options']['csrf_secret'] 
     SECRET_KEY = os.environ.get('SECRET_KEY') or csrf
     OPTIONS = config['options']
