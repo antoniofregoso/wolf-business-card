@@ -3,10 +3,11 @@ from flask import Flask, render_template, request, flash, redirect, url_for
 from wolf.models.odoo import server
 from wolf.config import   Config 
 from wolf.models.forms import LeadForm
+from wolf.models.vcard import vcard
 
 app = Flask(__name__)
 app.config.from_object(Config)
-
+vcard().get_qr(app.config['OPTIONS']['vcard'])
 
 @app.route('/')
 @app.route('/index')
@@ -21,7 +22,7 @@ def index():
     theme = bool(app.config['OPTIONS']['wolf_theme'])
     if form.validate_on_submit():
         return redirect(url_for('gracias'))
-    return render_template('index.html', theme=theme, title='Home', q=qs, form=form, ga=app.config['OPTIONS']['google'])
+    return render_template('index.html', theme=theme, title='Antonio Fregoso|Business card', q=qs, form=form, ga=app.config['OPTIONS']['google'])
 
 
 @app.route('/gracias', methods=['GET', 'POST'])
