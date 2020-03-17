@@ -1,5 +1,2 @@
 eclipse.preferences.version=1
-encoding//wolf/app.py=utf-8
-encoding//wolf/config.py=utf-8
-encoding//wolf/models/forms.py=utf-8
-encoding//wolf/models/odoo.py=utf-8
+encoding/wolf.py=utf-8

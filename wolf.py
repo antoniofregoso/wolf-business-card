@@ -1,9 +1,9 @@
 # coding: utf-8
 from flask import Flask, render_template, request, flash, redirect, url_for
-from wolf.models.odoo import server
-from wolf.config import   Config 
-from wolf.models.forms import LeadForm
-from wolf.models.vcard import vcard
+from models.odoo import server
+from config import   Config 
+from models.forms import LeadForm
+from models.vcard import vcard
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -35,7 +35,7 @@ def gracias():
 
 
 
-'''if __name__ == '__main__':
+if __name__ == '__main__':
     app.run(debug=True)
-    '''
+    
     

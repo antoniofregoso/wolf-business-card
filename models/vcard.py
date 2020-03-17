@@ -12,5 +12,5 @@ class vcard:
         qr.add_data(xcf_url)
         qr.make(fit=True)
         img = qr.make_image()
-        img.save('wolf/static/vcf/' + xcf_url + '.png')
+        img.save('static/vcf/' + xcf_url + '.png')
         
