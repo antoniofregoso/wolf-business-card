@@ -1,6 +1,5 @@
 Flask
 flask-wtf
 configparser
-uwsgi
 qrcode
 pillow

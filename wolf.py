@@ -22,7 +22,7 @@ def index():
     theme = bool(app.config['OPTIONS']['wolf_theme'])
     if form.validate_on_submit():
         return redirect(url_for('gracias'))
-    return render_template('index.html', theme=theme, title='Antonio Fregoso|Business card', q=qs, form=form, ga=app.config['OPTIONS']['google'])
+    return render_template('index.html', theme=theme, title='Antonio Fregoso', q=qs, form=form, ga=app.config['OPTIONS']['google'])
 
 
 @app.route('/gracias', methods=['GET', 'POST'])
@@ -36,6 +36,6 @@ def gracias():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
     
     

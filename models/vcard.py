@@ -1,5 +1,5 @@
 import qrcode
-
+import os
 class vcard:
     
     def get_qr(self,xcf_url):
@@ -12,5 +12,5 @@ class vcard:
         qr.add_data(xcf_url)
         qr.make(fit=True)
         img = qr.make_image()
-        img.save('static/vcf/' + xcf_url + '.png')
+        img.save(os.getcwd() + '/static/vcf/' + xcf_url + '.png')
         
